@@ -22,7 +22,7 @@ public class Biblioteca {
       
         
         //Insertar registro
-        Libro e1 = new Libro("7590-23-21", "Blanca Nieves", "Guillermo del toro", 2000, "Sabantino", 25);
+        Libro e1 = new Libro("0000001-01", "Blanca Nieves", "Guillermo del toro", 2000, "Sabantino", 25);
         libroDb.create(e1);
         System.out.println(e1);
         
@@ -31,16 +31,16 @@ public class Biblioteca {
         System.out.println(e2);
         
         //Actualizar registro
-        /*e1.setNombre("Carlos");
-        estudianteDb.actualizar(e1);
+        e1.setTitulo("Blanca Nieves");
+        libroDb.actualizar(e1);
         System.out.println("Se actualizó registro...");
         
         //Eliminar registro
-        estudianteDb.eliminar("7590-23-100000");
+        libroDb.eliminar("0000001-01");
         System.out.println("Se eliminó registro...");
         
         //Listar todos los registros
-        ArrayList<Estudiante> a = estudianteDb.obtenerTodos();
+        ArrayList<Estudiante> a = libroDb.obtenerTodos();
         System.out.println(a.size());
 */
     }
